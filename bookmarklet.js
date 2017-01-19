@@ -23,6 +23,8 @@ for (i=0; i<99; ++i) {
         break;
     }
 }
+    answer = firstWord.innerHTML + answer.innerHTML;
+answerArr = answer.split(" ");
 
     var b=document.getElementsByClassName("txtInput")[0];
     document.addEventListener("keypress",function(e){
