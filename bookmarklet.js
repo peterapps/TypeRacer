@@ -3,6 +3,7 @@ javascript:
     function oldA(){
         return document.getElementById("nhwMiddlegwt-uid-8")||document.getElementById("nhwMiddlegwt-uid-16");
     };
+    wordNumber = 0;
     function a() {
     return answerArr[wordNumber];
     wordNumber++;
