@@ -8,10 +8,6 @@ javascript:
     wordNumber++;
 }
 
-// setup - run once
-
-document.onkeypress = PrintNextWord;
-
 firstWord = null;
 for (i=0; i<99; ++i) {
     firstWord = document.getElementById("nhwMiddlegwt-uid-" + i);
