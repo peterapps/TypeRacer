@@ -1,36 +1,37 @@
 javascript:
-(function(){
-    function oldA(){
-        return document.getElementById("nhwMiddlegwt-uid-8")||document.getElementById("nhwMiddlegwt-uid-16");
-    };
-    wordNumber = 0;
-    function a() {
-    return answerArr[wordNumber];
+(function() {
+  function oldA() {
+    return document.getElementById("nhwMiddlegwt-uid-8") || document.getElementById("nhwMiddlegwt-uid-16");
+  };
+  wordNumber = 0;
+
+  function a() {
     wordNumber++;
-}
+    return answerArr[wordNumber];
+  }
 
-firstWord = null;
-for (i=0; i<99; ++i) {
+  firstWord = "";
+  for (i = 0; i < 99; i++) {
     firstWord = document.getElementById("nhwMiddlegwt-uid-" + i);
-    if (firstWord != null) {
-        break;
+    if (firstWord != "") {
+      break;
     }
-}
+  }
 
-answer = null;
-for (i=0; i<99; ++i) {
+  answer = "";
+  for (i = 0; i < 99; i++) {
     answer = document.getElementById("nhwRightgwt-uid-" + i);
-    if (answer != null) {
-        break;
+    if (answer != "") {
+      break;
     }
-}
-    answer = firstWord.innerHTML + answer.innerHTML;
-answerArr = answer.split(" ");
+  }
+  answer = firstWord.innerHTML + answer.innerHTML;
+  answerArr = answer.split(" ");
 
-    var b=document.getElementsByClassName("txtInput")[0];
-    document.addEventListener("keypress",function(e){
-        if(e.keyCode == 32){
-            b.value=a().innerHTML;
-        }
-    });
+  var b = document.getElementsByClassName("txtInput")[0];
+  document.addEventListener("keypress", function(e) {
+    if (e.keyCode == 32) {
+      b.value = a().innerHTML;
+    }
+  });
 })();
