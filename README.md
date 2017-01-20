@@ -1,4 +1,8 @@
-# TypeRacer
+# TypeRacer Hack
+Use this code when playing [TypeRacer](http://play.typeracer.com/).
+
+##Best supported code
+```javascript:(function(){function a(){for(var i=0;i<100;i++){if(document.getElementById("nhwMiddlegwt-uid-"+i)) return document.getElementById("nhwMiddlegwt-uid-"+i;}};var b=document.getElementsByClassName("txtInput")[0];document.addEventListener("keypress",function(e){if(e.keyCode == 32){b.value=a().innerHTML;}});})();```
 
 ##Fastest code
 Use this bookmarklet and click it when the match starts:<br/>
